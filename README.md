@@ -4,26 +4,29 @@
 This repository includes a script to predict the next day's opening price of Tesla stock and simulate a simple trading strategy. Due to RAM constraints, this version uses a RandomForestRegressor with 200 estimators. These limitations may result in less precise predictions compared to using a larger dataset and/or more robust model configurations.
 
 *File Overview*
-1. TSLA_updated.csv
-   - CSV file containing Tesla stock price data fetched from yfinance, including 'Close', 'Open', and 'Volume' columns used for predictions.
-2. trading_model.pkl
-   - Serialized trained RandomForestRegressor model saved for later use.
-3. trading_results.csv
-   - Output file summarizing the final trading performance, including initial capital, final balance, and percentage performance.
-4. trade_log.csv
-   - Output file logging daily trading decisions (Buy, Sell, Hold).
+- TSLA_updated.csv
+  - CSV file containing Tesla stock price data fetched from yfinance, including 'Close', 'Open', and 'Volume' columns used for predictions.
+- trading_model.pkl
+  - Serialized trained RandomForestRegressor model saved for later use.
+- trading_results.csv
+  - Output file summarizing the final trading performance, including initial capital, final balance, and percentage performance.
+- trade_log.csv
+  - Output file logging daily trading decisions (Buy, Sell, Hold).
 
 *How to Run*
 1. Install Dependencies
    - Ensure you have Python 3+ installed, along with the required libraries:
+     ```bash
      pip install pandas numpy scikit-learn yfinance joblib
-
+      ```
 2. Check File Paths
    - Ensure the paths for TSLA_updated.csv (stock data) and trading_model.pkl (saved model) are correct in main.py. By default, they are set to the project directory.
 
 3. Execute the Script
    - Run the script in a Python environment (e.g., command line or Jupyter Notebook):
+```bash
      python main.py
+```
    - The code will print:
      - Data loading and cleaning steps
      - Model training confirmation
