@@ -72,10 +72,4 @@ This repository includes a script to predict the next day's opening price of Tes
   - Using advanced models like CatBoost or LightGBM
 - Feature Engineering: Additional stock indicators (e.g., MACD) and advanced transformations may improve predictive accuracy.
 
-*Example Output*
--2025-03-24 - Current: $278.39, Predicted: $280.29, Buy Threshold: $278.95, Sell Threshold: $277.83
--2025-03-24 9:00 AM EST Submission: Buy: $5000.00
--Executed at 10:00 AM EST: Buy at $283.60
--...
--Final Account Balance: $10073.36
--Performance over the period: 0.73%
+
